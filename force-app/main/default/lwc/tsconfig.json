@@ -1,0 +1,17 @@
+{
+  "extends": "../../../../.sfdx/tsconfig.sfdx.json",
+  "include": ["**/*.ts", "../../../../.sfdx/typings/lwc/**/*.d.ts"],
+  "exclude": ["**/__tests__/**"],
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["es2015", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true // Add this line to prevent TypeScript from emitting files
+  }
+}
